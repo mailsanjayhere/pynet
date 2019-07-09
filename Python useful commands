@@ -41,3 +41,19 @@ IPv4Network('192.0.2.0/24')
 '192.0.2.5/255.255.255.0'
 >>> interface.with_hostmask                       -> Wildcard mask
 '192.0.2.5/0.0.0.255'
+
+
+Excel commands:
+---------------
+Excel writing:
+import xlsxwriter                                                       ->  Importing module for Excel writing
+workbook=xlsxwriter.Workbook('example.xlsx')                            ->  Creating workbook
+workbook.close()                                                        ->  Closing workbook(at the end)
+sheet1=workbook.add_worksheet('sheet1')                                 ->  Creating sheet
+ft = workbook.add_format({'bold': True,'border':1, 'align': 'center'})  ->  Creating font for the workbook
+ft.set_align('vcenter')                                                 ->  Setting alignment
+ft.set_font_size(10)                                                    ->  Setting font size
+ft.set_font_name('Segoe UI')                                            ->  Setting font name
+ft.set_font_color('#FFFFFF')                                            ->  Setting font color
+ft.set_bg_color('#05204F')                                              ->  Setting font bg color
+sheet1.write(2,0,'sample text',ft)                                       -> Writing to a particular cell of a sheet & assigning the font
