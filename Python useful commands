@@ -1,0 +1,43 @@
+Directory commands:
+-------------------------
+import os                            -> module to import
+os.getcwd()                          -> Get Current Directory
+os.chdir('C:\\Python33')             -> Change current directory
+os.listdir()                         -> Lists the files in the directory
+os.mkdir('test')                     -> Creating new folder
+os.rename('test','new_one')          -> Renaming the folder
+os.remove('old.txt')                 -> Removing file
+os.rmdir('new_one')                  -> Removing directory
+
+IP address commands:
+-------------------------
+import ipaddress                          -> module to import
+ipaddress.ip_address('192.168.1.1')       -> Host address
+ipaddress.ip_network('192.168.0.0/24')    -> Network address
+ipaddress.ip_interface('192.168.0.1/24')  -> Interface address(an address with subnet mask)
+>>> a = ip_network('192.168.1.0/24')      -> subnet_of
+>>> b = ip_network('192.168.1.128/30')
+>>> b.subnet_of(a)
+>>> for addr in IPv4Network('192.0.2.0/28'): -> Iteration
+...     addr
+...
+IPv4Address('192.0.2.0')
+IPv4Address('192.0.2.1')
+IPv4Address('192.0.2.2')
+IPv4Address('192.0.2.3')
+
+>>> IPv4Network('192.0.2.0/28')[0]      -> Accessing particular address
+IPv4Address('192.0.2.0')
+>>> IPv4Network('192.0.2.0/28')[15]
+IPv4Address('192.0.2.15')
+>>> interface = IPv4Interface('192.0.2.5/24')
+>>> interface.ip
+IPv4Address('192.0.2.5')
+>>> interface.network                             -> Network of a host
+IPv4Network('192.0.2.0/24')                        
+>>> interface.with_prefixlen                      -> With Prefix len
+'192.0.2.5/24'
+>>> interface.with_netmask                        -> Subnet mask
+'192.0.2.5/255.255.255.0'
+>>> interface.with_hostmask                       -> Wildcard mask
+'192.0.2.5/0.0.0.255'
