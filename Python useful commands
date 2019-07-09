@@ -45,6 +45,7 @@ IPv4Network('192.0.2.0/24')
 
 Excel commands:
 ---------------
+
 Excel writing:
 import xlsxwriter                                                       ->  Importing module for Excel writing
 workbook=xlsxwriter.Workbook('example.xlsx')                            ->  Creating workbook
@@ -56,4 +57,15 @@ ft.set_font_size(10)                                                    ->  Sett
 ft.set_font_name('Segoe UI')                                            ->  Setting font name
 ft.set_font_color('#FFFFFF')                                            ->  Setting font color
 ft.set_bg_color('#05204F')                                              ->  Setting font bg color
-sheet1.write(2,0,'sample text',ft)                                       -> Writing to a particular cell of a sheet & assigning the font
+sheet1.write(2,0,'sample text',ft)                                      -> Writing to a particular cell of a sheet & assigning the font
+
+Excel reading:
+import xlrd                                                             -> Module to import
+from xlrd import open_workbook,cellname                                 -> Libraries to import
+book = open_workbook("example.xlsx")                                    -> Opening the book to read
+sheet = book.sheet_by_index(0)                                          -> Accessing particular sheet
+sneet.name                                                              -> Access sheet name
+sheet.nrwos                                                             -> Number of rows in the sheet
+sneet.ncols                                                             -> Number of cols in the sheet
+for sheet in book.sheets():                                             -> Iterating through the sheets
+val = sheet.cell(row_index,col_index).value                             -> Assining value of a particular cell to variable 'val'
