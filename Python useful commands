@@ -69,3 +69,17 @@ sheet.nrwos                                                             -> Numbe
 sneet.ncols                                                             -> Number of cols in the sheet
 for sheet in book.sheets():                                             -> Iterating through the sheets
 val = sheet.cell(row_index,col_index).value                             -> Assining value of a particular cell to variable 'val'
+
+
+Regular expressions:
+-------------------
+import re                                                               -> Library to import
+heroRegex = re.compile (r'Batman|Tina Fey')                             -> Create the pattern
+heroRegex.sub('<replacement word>','<source string>')                   -> Retruns a new string, that replaced the pattern with 'replacement word'
+
+
+String Operations:
+------------------
+text.split()
+text.strip()
+text.replace()
