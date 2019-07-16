@@ -5,7 +5,7 @@ os.getcwd()                          -> Get Current Directory
 os.chdir('C:\\Python33')             -> Change current directory
 os.listdir()                         -> Lists the files in the directory
 os.mkdir('test')                     -> Creating new folder
-os.rename('test','new_one')          -> Renaming the folder
+os.rename('test','new_one')          -> Renaming the folder or file
 os.remove('old.txt')                 -> Removing file
 os.rmdir('new_one')                  -> Removing directory
 
