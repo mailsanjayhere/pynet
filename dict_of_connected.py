@@ -8,7 +8,7 @@ Below program creates the dictironary of device names as keys and (sbunet,attach
 Basically the connected subnets for a device is listed
 The input to this program is the folder that contains the files with names as the device hostnames and has the contents of 
 show ip route connected -> in case of IOS
-show ip route local -> in case of NX-OS
+show ip route direct -> in case of NX-OS
 '''
 os.chdir('c:\Python3')  #The respective path where the files of show ip route connected/local is available
 files= os.listdir()
