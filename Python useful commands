@@ -1,3 +1,7 @@
+Author         : SANJAY KUMAR P S
+Last Update on : 31st Jul
+Version        : 0.2
+
 Directory commands:
 -------------------------
 import os                            -> module to import
@@ -58,6 +62,8 @@ ft.set_font_name('Segoe UI')                                            ->  Sett
 ft.set_font_color('#FFFFFF')                                            ->  Setting font color
 ft.set_bg_color('#05204F')                                              ->  Setting font bg color
 sheet1.write(2,0,'sample text',ft)                                      -> Writing to a particular cell of a sheet & assigning the font
+sheet3.set_column(<col_strat>, <col_end>, <width>)                      -> Set coumn width for the range of columns
+
 
 Excel reading:
 import xlrd                                                             -> Module to import
