@@ -82,7 +82,7 @@ Regular expressions:
 import re                                                               -> Library to import
 heroRegex = re.compile (r'Batman|Tina Fey')                             -> Create the pattern
 heroRegex.sub('<replacement word>','<source string>')                   -> Retruns a new string, that replaced the pattern with 'replacement word'
-
+re.match(<pattern>,<string to test>)                                    -> Returns true if there is a match, can be used with conditionals..
 
 String Operations:
 ------------------
