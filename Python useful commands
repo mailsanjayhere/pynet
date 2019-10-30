@@ -83,6 +83,8 @@ import re                                                               -> Libra
 heroRegex = re.compile (r'Batman|Tina Fey')                             -> Create the pattern
 heroRegex.sub('<replacement word>','<source string>')                   -> Retruns a new string, that replaced the pattern with 'replacement word'
 re.match(<pattern>,<string to test>)                                    -> Returns true if there is a match, can be used with conditionals..
+ipregex = re.compile(r'\d+\.\d+\.\d+\.\d+')                             -> creates a pattern to match an IP address(though there is no 255 check here
+re.findall(ipregex, <source string>)                                    -> returns a list of all the occureances of the ipregex pattern       
 
 String Operations:
 ------------------
