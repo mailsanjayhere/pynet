@@ -17,3 +17,13 @@ git checkout <file path>                                              ---> Rever
 git reset --hard                                                      ---> Reset your entire working directory to the last commit
 git config --global user.name "Your Name"                             ---> Tell git what is your name
 git config --global user.email your@email-address.com                 ---> Tell git what is your email address
+git add <new or modified file>                                        ---> Stage files to be added to the commit with git add
+git commit -m "Commit Message"                                        ---> Commit the files to the repository with a commit message git commit.
+
+
+
+Step	Action	Git Commands
+1	Clone the Remote Repository	:       git clone <url>
+2	Create and Checkout a Local Branch:	git checkout -b <new branch name>
+3	Incrementally Commit Changes:       git add <new or modified file>
+                                      git commit -m "Commit Message"
