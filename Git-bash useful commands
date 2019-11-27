@@ -9,3 +9,11 @@ python -V                                                             ---> Defau
 2) source py_virt1/Scripts/activate                                   ---> Activating the virtual environment
 3) deactivate                                                         ---> deactivates it
 node -v                                                               ---> Node.js installed version check
+git status                                                            ---> verify what branch you are working on, and the current status of your working tree
+git checkout -b mycode                                                ---> to switch between branches(-b option to the checkout command causes Git to create a new branch - and then switch to it.)
+git fetch                                                             ---> update your local repo with the updates from the remote repo
+git diff                                                              ---> To see what changed in the file
+git checkout <file path>                                              ---> Revert the respective file to previous committed state
+git reset --hard                                                      ---> Reset your entire working directory to the last commit
+git config --global user.name "Your Name"                             ---> Tell git what is your name
+git config --global user.email your@email-address.com                 ---> Tell git what is your email address
