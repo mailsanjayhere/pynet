@@ -1,0 +1,11 @@
+Git-bash useful commands
+#for setting up the enviornment for network automation on windows
+
+git --version
+git clone https://github.com/CiscoDevNet/hello_network                ---> To clone a repository
+./<file name>.sh                                                      ---> Executing a shell script
+python -V                                                             ---> Default python version
+1) py -3 -m venv py_virt1                                             ---> Creating a virtual environment named py_virt1(recommended practice)
+2) source py_virt1/Scripts/activate                                   ---> Activating the virtual environment
+3) deactivate                                                         ---> deactivates it
+node -v                                                               ---> Node.js installed version check
