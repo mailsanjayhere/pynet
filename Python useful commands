@@ -112,5 +112,5 @@ pyautogui.hotkey('ctrl', 'c')
 
 Miscellaneous:
 import shutil
-shutil(<src_file_name>,<dst_file_name>)
+shutil.copy(<src_file_name>,<dst_file_name>)                     --> useful to copy a file
 
