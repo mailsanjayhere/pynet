@@ -109,3 +109,8 @@ pyautogui.keyDown('shift')
 pyautogui.write(['left', 'left', 'left', 'left', 'left', 'left'])
 pyautogui.keyUp('shift')
 pyautogui.hotkey('ctrl', 'c')
+
+Miscellaneous:
+import shutil
+shutil(<src_file_name>,<dst_file_name>)
+
