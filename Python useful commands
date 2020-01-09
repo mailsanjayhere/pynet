@@ -1,7 +1,3 @@
-Author         : SANJAY KUMAR P S
-Last Update on : 31st Jul
-Version        : 0.2
-
 Directory commands:
 -------------------------
 import os                            -> module to import
@@ -12,6 +8,10 @@ os.mkdir('test')                     -> Creating new folder
 os.rename('test','new_one')          -> Renaming the folder or file
 os.remove('old.txt')                 -> Removing file
 os.rmdir('new_one')                  -> Removing directory
+
+import shutil
+shutil.copy(<src_file>,<dst_file>)   -> To copy a file(use case.. copy the template and edit only the variables)
+
 
 IP address commands:
 -------------------------
