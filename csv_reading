@@ -1,0 +1,22 @@
+import os
+import csv
+print(os.getcwd())
+h={}
+e={}
+with open('test_csv.csv') as csv_file:
+    csv_reader = csv.reader(csv_file)
+    line_count = 0
+    for row in csv_reader:
+        if line_count == 0:
+            i=0
+            for head in row:
+                h[i] = head
+                i=i+1
+            line_count = line_count + 1
+        else:
+            i = 0
+            for col in row:
+                if('FALSE') in col:
+                    print('FALSE in {}'.format(h[i],i))
+                i=i+1
+
